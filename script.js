@@ -1,5 +1,5 @@
 var ms = 0, s = 0, m = 0, h = 0
-var timer;
+var timer=false;
 
 var display = document.querySelector(".timer-Display")
 var laps = document.querySelector(".laps")
@@ -65,7 +65,7 @@ function restart(){
     
 }
 
-// lap = taking screenshot of current time...
+
 function lap() {
     if(timer) {   
         var Li = document.createElement("li")   
