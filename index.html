@@ -9,22 +9,23 @@
 
 </head>
 <body>
-    <h1><b><span>S</span>top<span>W</span>atch</b></h1>
+    <h1><b><span id="h1">S</span>top<span id="h1">W</span>atch</b></h1>
    <div class="body-container">
     <div class="main-container">
-        <div class="timer-display"> 00:00:00:00 </div>
+        <div class="timer-Display"> 00:00:00:00</div>
         <ul class="laps"></ul>
-        <div class="action">
-            <button class="btn btn-outline-success" id="start-timer">Start</button>
-            <button  class="btn btn-outline-primary" id="pause-timer">Pause</button>
-            <button  class="btn btn-outline-danger" id="reset-timer">Reset</button>
-            <button  class="btn btn-outline-success" id="restart-timer">Restart</button>
-            <button  class="btn btn-outline-warning" id="record-lap">Lap</button>
-            <button  class="btn btn-outline-danger" id="reset-lap">Reset Laps</button>
+        <div class="buttons">
+            <button class="btn btn-outline-success" id="startTimer" onclick="start()">Start</button>
+            <button  class="btn btn-outline-primary" id="pauseTimer" onclick="pause()">Pause</button>
+            <button  class="btn btn-outline-danger" id="resetTime" onclick="reset()">Reset</button>
+            <button  class="btn btn-outline-success" id="restartTimer" onclick="restart()">Restart</button>
+            <button  class="btn btn-outline-warning" id="record-lap" onclick="lap()">Lap</button>
+            <button  class="btn btn-outline-danger" id="resetLap" onclick="resetLap()">Reset Laps</button>
         </div>
     </div>
    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ h1{
     text-shadow: 0px 2px 5px black;
 
 }
-span{
+#h1{
     color: red;
     text-shadow: 0px 4px 8px black;
    
@@ -40,7 +40,7 @@ body{
     
 }
 
-.timer-display{
+.timer-Display{
     background-color: #2a9d8f;
     border-top-left-radius:19px;
     border-top-right-radius: 19px;
@@ -57,9 +57,10 @@ body{
     color: whitesmoke;
     text-align: center;
     padding: 1rem;
+    list-style-type: none;
 
 }
-.action{
+.buttons{
     background-color: #fefae0;
     border-bottom-left-radius:20px ;
     border-bottom-right-radius:20px ;
@@ -81,7 +82,7 @@ button{
     .main-container{
         width: 21rem;
     }
-    .timer-display{
+    .timer-Display{
         font-size: 3rem;
     }
 }
