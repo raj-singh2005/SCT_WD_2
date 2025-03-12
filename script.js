@@ -1,5 +1,7 @@
 var ms = 0, s = 0, m = 0, h = 0 ;
 var timer=false;
+let body = document.querySelector("body");
+let currMode="light";
 
 var display = document.querySelector(".timer-Display");
 var laps = document.querySelector(".laps");
@@ -74,4 +76,21 @@ function lap() {
 }
 function resetLap(){
     laps.innerHTML = "";
+}
+
+function changemode(){
+    if(currMode=="light"){
+        currMode="dark";
+        body.classList.remove("light");
+        body.classList.add("dark");
+      
+
+    }else {
+        currMode="light";
+        body.classList.remove("dark")
+        body.classList.add("light");
+       
+
+    }
+
 }
